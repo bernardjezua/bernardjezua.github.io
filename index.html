@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernard Jezua Tandang</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "ACoPLPhtjPUL2uD51",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- desktop-nav -->
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- hamburger-nav -->
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo">
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenutoggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- profile -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Profile.png" alt="Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Bernard Jezua Tandang</h1>
+            <p class="section__text__p2">Aspiring Mobile and UI/UX Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Tandang_CV.pdf')">Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Me
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Linkedin Profile" class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/bernardjezua/', '_blank');" />
+                <img src="./assets/github.png" alt="Linkedin Profile" class="icon"
+                    onclick="window.open('https://github.com/bernardjezua', '_blank');" />
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title2">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>Looking for internship opportunities.</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>University of the Philippines Los Baños</p>
+                        <p>B.S. Computer Science <br />2021 - Present</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon" />
+                        <h3>Projects</h3>
+                        <p>7+</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Aspiring UI/UX developer with a passion for developing intuitive and user-friendly mobile and web applications. Proficient in front-end and mobile development technologies with a recent focus on Flutter. I created this student portfolio to document my projects. I am also currently taking Google's UX Design course. Currently 22 years old and based in Laguna, Philippines. Nice to meet you!</p>
+                    <br /><br />
+                </div>
+            </div>
+    </section>
+
+    <!-- skills  -->
+    <!-- Skills Section HTML -->
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title2">Skills</h1>
+        <div class="skills__container">
+            <div class="skill_category">
+                <div class="skill_title">
+                    <h2>Frontend</h2>
+                </div>
+                <div class="skill_list">
+                    <div class="skill_item">HTML</div>
+                    <div class="skill_item">CSS</div>
+                    <div class="skill_item">Flutter</div>
+                    <div class="skill_item">React</div>
+                    <div class="skill_item">Tkinter</div>
+                    <div class="skill_item">Tailwind CSS</div>
+                </div>
+            </div>
+
+            <div class="skill_category">
+                <div class="skill_title">
+                    <h2>Backend/Database</h2>
+                </div>
+                <div class="skill_list">
+                    <div class="skill_item">Express</div>
+                    <div class="skill_item">Node.js</div>
+                    <div class="skill_item">MariaDB</div>
+                    <div class="skill_item">MongoDB</div>
+                </div>
+            </div>
+
+            <div class="skill_category">
+                <div class="skill_title">
+                    <h2>Miscellaneous</h2>
+                </div>
+                <div class="skill_list">
+                    <div class="skill_item">Git</div>
+                    <div class="skill_item">Dart</div>
+                    <div class="skill_item">Python</div>
+                    <div class="skill_item">C</div>
+                    <div class="skill_item">R</div>
+                    <div class="skill_item">R Shiny</div>
+                    <div class="skill_item">SQL</div>
+                    <div class="skill_item">JavaScript</div>
+                    <div class="skill_item">Java</div>
+                    <div class="skill_item">JavaFX</div>
+                    <div class="skill_item">Google Firebase</div>
+                </div>
+            </div>
+
+            <div class="skill_category">
+                <div class="skill_title">
+                    <h2>Design</h2>
+                </div>
+                <div class="skill_list">
+                    <div class="skill_item">Figma</div>
+                    <div class="skill_item">Canva</div>
+                    <div class="skill_item">Adobe Photoshop</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title2">Projects</h1>
+        <div class="slider-container">
+            <button class="slide-arrow prev-arrow">&#8249;</button>
+            <div class="projects-slider" id="projectsSlider">
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/bernardjezua/traveler/main/docs/profile.png" alt="Traveler">
+                    <h3>Traveler: A Genshin-Inspired Mobile Slam Book Application</h3>
+                    <p>Traveler is a mobile slambook application inspired by Genshin Impact that allows users to add, update, and delete their friends through a slambook form or a QR code.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/bernardjezua/traveler" target="_blank">GitHub</a>
+                    </div>
+                    <div class="skill_title"></div>
+                    <div class="skill_list">
+                        <div class="skill_item">Flutter</div>
+                        <div class="skill_item">Dart</div>
+                        <div class="skill_item">Google Firebase</div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/foodup.png" alt="FoodUP">
+                    <h3>FoodUP: Food and Restaurant Review Application</h3>
+                    <p>FoodUP is an information system that records food reviews and items from establishments. Transformed several pages from Figma to Tkinter and debugged frontend data inaccuracy issues.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/bernardjezua/FoodUP" target="_blank">GitHub</a>
+                    </div>
+                    <div class="skill_title"></div>
+                    <div class="skill_list">
+                        <div class="skill_item">Python</div>
+                        <div class="skill_item">Tkinter</div>
+                        <div class="skill_item">SQL</div>
+                        <div class="skill_item">MariaDB</div>
+                        <div class="skill_item">Figma</div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/fastsnap.png" alt="FastSnap">
+                    <h3>FastSnap: Quick Mobile Video Editor</h3>
+                    <p>FastSnap is a mobile video editor prototype made using Figma. It is designed to offer an intuitive user experience for users who edit videos on the go.</p>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/G8YLkwGD8wgNtwrnYaceT4/FastSnap?node-id=20-2&t=VCLJEgt4FHC3olAj-1" target="_blank">Design</a>
+                        <a href="https://www.figma.com/proto/G8YLkwGD8wgNtwrnYaceT4/FastSnap?node-id=20-2&t=JVajyBlgcZPb3tl2-1" target="_blank">Prototype</a>
+                    </div>
+                    <div class="skill_title"></div>
+                    <div class="skill_list">
+                        <div class="skill_item">Figma</div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/hatid.png" alt="Interpreter">
+                    <h3>HATID: An E-Commerce Application</h3>
+                    <p>HATID is an e-commerce platform design idea for the Department of Agriculture (DA) to efficiently manage the distribution of agricultural products to the public market.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/bernardjezua/hatid" target="_blank">GitHub</a>
+                    </div>
+                    <div class="skill_title"></div>
+                    <div class="skill_list">
+                        <div class="skill_item">React</div>
+                        <div class="skill_item">Express</div>
+                        <div class="skill_item">Node.js</div>
+                        <div class="skill_item">MongoDB</div>
+                        <div class="skill_item">Tailwind CSS</div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="./assets/lolcode.png" alt="Interpreter">
+                    <h3>LOLCODE Interpreter</h3>
+                    <p>This project implements a LOLCODE interpreter in Python and it executes programs that are written in the LOLCODE language. Implemented algorithms in interpreting operations and statements that capture the delimiters and execute their functionalities.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/bernardjezua/LOLCODE-Interpreter" target="_blank">GitHub</a>
+                    </div>
+                    <div class="skill_title"></div>
+                    <div class="skill_list">
+                        <div class="skill_item">Python</div>
+                        <div class="skill_item">Tkinter</div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/qsps.png" alt="QSPS">
+                    <h3>QSPS: Quadratic Spline and Polynomial Solver</h3>
+                    <p>QSPS is an R Shiny application that allows users to perform quadratic spline interpolation and polynomial regression analysis. The user interface was designed with custom CSS for aesthetic appeal.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/bernardjezua/QSPS" target="_blank">GitHub</a>
+                    </div>
+                    <div class="skill_title"></div>
+                    <div class="skill_list">
+                        <div class="skill_item">R</div>
+                        <div class="skill_item">R Shiny</div>
+                        <div class="skill_item">CSS</div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/viper.png" alt="Viper">
+                    <h3>Viper's Shootout: Mini Shooting Game</h3>
+                    <p>Viper's Shootout is a mini-shooting game written in Java and implemented using JavaFX and Eclipse IDE. The game is inspired by VALORANT and its character, Viper.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/bernardjezua/viper" target="_blank">GitHub</a>
+                        <a href="https://drive.google.com/file/d/1sZJoVnwqbOKodjO6NM9zShKxo8Jjxcw3/view?usp=sharing" target="_blank">Preview</a>
+                    </div>
+                    <div class="skill_title"></div>
+                    <div class="skill_list">
+                        <div class="skill_item">Java</div>
+                        <div class="skill_item">JavaFX</div>
+                        <div class="skill_item">Adobe Photoshop</div>
+                        <div class="skill_item">Canva</div>
+                    </div>
+                </div>
+            </div>
+            <button class="slide-arrow next-arrow">&#8250;</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title2">Contact Me</h1>
+        <div class="contact-container">
+            <form class="contact-form" onsubmit="return sendMail(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-color-1">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/bernardjezua/', '_blank');" />
+                <img src="./assets/email.png" alt="Email" class="icon" onclick="location.href='mailto:bernardjezuaml@gmail.com';" />
+                <img src="./assets/github.png" alt="GitHub" class="icon" onclick="window.open('https://github.com/bernardjezua', '_blank');" />
+            </div>
+            <p class="copyright">© 2025 Bernard Jezua Tandang. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
