@@ -5,11 +5,12 @@ function toggleMenu() {
     menuLinks.classList.toggle('open');
     hamburgerIcon.classList.toggle('open');
     console.log('Menu toggled');
+    
 }
 
 function sendMail(event) {
     event.preventDefault();
-
+    
     var params = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
@@ -28,7 +29,6 @@ function sendMail(event) {
         .then(res => {
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
-            document.getElementById("subject").value = "";
             document.getElementById("message").value = "";
             console.log(res);
             alert("Your message sent successfully!!");
@@ -42,7 +42,7 @@ function sendMail(event) {
             submitButton.textContent = 'Send Message';
         });
 
-    return false;
+    return false; 
 }
 
 // Function to handle responsiveness for navigation
