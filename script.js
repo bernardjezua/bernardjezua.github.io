@@ -18,7 +18,7 @@ function sendMail(event) {
         message: document.getElementById("message").value,
     };
 
-    const serviceID = "service_gedx4ze";
+    const serviceID = "service_yfbfgik";
     const templateID = "template_nq46314";
 
     const submitButton = event.target.querySelector('button');
