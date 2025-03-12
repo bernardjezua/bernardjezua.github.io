@@ -5,12 +5,11 @@ function toggleMenu() {
     menuLinks.classList.toggle('open');
     hamburgerIcon.classList.toggle('open');
     console.log('Menu toggled');
-    
 }
 
 function sendMail(event) {
     event.preventDefault();
-    
+
     var params = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
@@ -43,7 +42,7 @@ function sendMail(event) {
             submitButton.textContent = 'Send Message';
         });
 
-    return false; 
+    return false;
 }
 
 // Function to handle responsiveness for navigation
@@ -89,20 +88,6 @@ function handleSlider(sliderId, direction) {
     });
 }
 
-// Auto-slide functionality
-let autoSlideInterval;
-
-function startAutoSlide() {
-    autoSlideInterval = setInterval(() => {
-        handleSlider('projectsSlider', 1);
-        handleSlider('blogsSlider', 1);
-    }, 5000); // Slides every 5 seconds
-}
-
-function stopAutoSlide() {
-    clearInterval(autoSlideInterval);
-}
-
 // Initialize everything when the DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initial mobile nav setup
@@ -130,21 +115,4 @@ document.addEventListener('DOMContentLoaded', () => {
             handleSlider('blogsSlider', direction);
         });
     });
-
-    // Set up hover handlers for sliders to pause auto-slide
-    const projectsSlider = document.getElementById('projectsSlider');
-    const blogsSlider = document.getElementById('blogsSlider');
-
-    if (projectsSlider) {
-        projectsSlider.addEventListener('mouseenter', stopAutoSlide);
-        projectsSlider.addEventListener('mouseleave', startAutoSlide);
-    }
-
-    if (blogsSlider) {
-        blogsSlider.addEventListener('mouseenter', stopAutoSlide);
-        blogsSlider.addEventListener('mouseleave', startAutoSlide);
-    }
-
-    // Start auto-sliding
-    startAutoSlide();
 });
