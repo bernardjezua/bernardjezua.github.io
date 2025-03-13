@@ -219,15 +219,7 @@ section {
 }
 .title {
     font-size: 2.75rem;
-    transition: all 0.5s ease;
     text-align: center;
-}
-
-.title:hover {
-    background: linear-gradient(to right, rgb(0, 80, 160), pink);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
 }
 
 .title {
@@ -306,9 +298,8 @@ section {
 /* About */
 
 .title2 {
-    font-size: 2.75rem;
     text-align: center;
-    color: black;
+    font-size: 2.75rem;
 }
 
 .section__pic-container2 {
@@ -320,18 +311,16 @@ section {
 
 #about {
     position: relative;
-    padding: 1rem 2rem;
-    margin-top: 2rem;
 }
 
 .about-container {
     gap: 2rem;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .about-details-container {
     justify-content: center;
-    margin-bottom: 4rem;
     flex-direction: column;
 }
 
@@ -351,8 +340,7 @@ section {
 }
 
 .details-container {
-    padding: 1rem;
-    margin: 0 1rem;
+    padding: 1.5rem;
     flex: 1;
     background: whitesmoke;
     border-radius: 2rem;
@@ -380,7 +368,6 @@ section {
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 0 1rem;
-    margin-bottom: 4rem;
 }
 
 .skill_category {
@@ -529,7 +516,7 @@ section {
     }
 
     .project-card, .achievement-card, .blog-card {
-        width: 300px;
+        width: 250px;
     }
 }
 /* Slider Container Styles */
@@ -756,7 +743,7 @@ section {
     }
     .title,
     .title2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     
     .btn-container {
@@ -768,10 +755,6 @@ section {
     .btn {
         width: 80%;
         max-width: 250px;
-    }
-
-    .submit-btn {
-        width: 25%;
     }
     
     #socials-container {
