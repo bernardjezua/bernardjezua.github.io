@@ -33,13 +33,13 @@ function sendMail(event) {
             console.log(res);
             alert("Your message sent successfully!!");
             submitButton.disabled = false;
-            submitButton.textContent = 'Send Message';
+            submitButton.textContent = 'Submit';
         })
         .catch(err => {
             console.log(err);
             alert("Error sending message. Please try again.");
             submitButton.disabled = false;
-            submitButton.textContent = 'Send Message';
+            submitButton.textContent = 'Submit';
         });
 
     return false; 
