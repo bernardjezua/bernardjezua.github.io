@@ -458,7 +458,7 @@ section {
 
 .project-card, .achievement-card, .blog-card {
     flex: 0 0 auto;
-    width: 300px;
+    width: 200px;
     background: white;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -516,7 +516,11 @@ section {
     }
 
     .project-card, .achievement-card, .blog-card {
-        width: 250px;
+        width: 240px;
+    }
+
+    .project-card img {
+        height: 175px;
     }
 }
 /* Slider Container Styles */
