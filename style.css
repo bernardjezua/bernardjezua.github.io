@@ -424,14 +424,14 @@ section {
     transform: translateY(-2px);
 }
 
-/* Projects achievement and blogs Section Styles */
-#projects, #achievements, #blogs {
+/* Projects and Designs Section Styles */
+#projects, #designs {
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
 }
 
-.projects-slider, .achievements-slider, .blogs-slider {
+.projects-slider, .designs-slider, .achievements-slider, .blogs-slider {
     display: flex;
     gap: 2.5rem;
     overflow-x: auto;
@@ -441,20 +441,23 @@ section {
 }
 
 .projects-slider::-webkit-scrollbar, 
-.achievements-slider::-webkit-scrollbar
+.achievements-slider::-webkit-scrollbar,
+.designs-slider::-webkit-scrollbar,
 .blogs-slider::-webkit-scrollbar {
     height: 8px;
 }
 
 .projects-slider::-webkit-scrollbar-track,
-.achievements-slider::-webkit-scrollbar-track
+.achievements-slider::-webkit-scrollbar-track,
+.designs-slider::-webkit-scrollbar-track,
 .blogs-slider::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 4px;
 }
 
 .projects-slider::-webkit-scrollbar-thumb,
-.achievements-slider::-webkit-scrollbar-thumb
+.achievements-slider::-webkit-scrollbar-thumb,
+.designs-slider::-webkit-scrollbar-thumb,
 .blogs-slider::-webkit-scrollbar-thumb  {
     background: #888;
     border-radius: 4px;
