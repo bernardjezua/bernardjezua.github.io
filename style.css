@@ -760,6 +760,10 @@ section {
         width: 80%;
         max-width: 250px;
     }
+
+    .submit-btn{
+        width: 25%;
+    }
     
     #socials-container {
         margin-top: 1rem;
