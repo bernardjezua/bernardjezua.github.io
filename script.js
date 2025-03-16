@@ -108,11 +108,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Set up blog slider controls
-    document.querySelectorAll('#blogs .slide-arrow').forEach((arrow) => {
+    // Set up designs slider controls
+    document.querySelectorAll('#designs .slide-arrow').forEach((arrow) => {
         arrow.addEventListener('click', () => {
             const direction = arrow.classList.contains('prev-arrow') ? -1 : 1;
-            handleSlider('blogsSlider', direction);
+            handleSlider('designsSlider', direction);
         });
     });
 });
