@@ -1,1 +1,0 @@
-# bernardjezua.github.io
